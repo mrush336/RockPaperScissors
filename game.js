@@ -26,5 +26,11 @@ function playRound(playerSelect, compSelect){
     alert(`The computer chose ${compSelect}, You lost.`);
     }
 }
+
 //Call to start the game
-playRound(playerSelect(), compSelect());
+if (prompt('Do you want to play a game?') === 'yes'){ 
+    playRound(playerSelect(), compSelect());
+}else{
+    confirm('Maybe later then.');
+}
+
