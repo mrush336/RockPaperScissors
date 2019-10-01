@@ -1,4 +1,26 @@
-body {
-    
-
+button {
+  background-color: rgb(47, 247, 7); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  border-radius: 12px;
+  width: 50%;
+  margin: auto;
 }
+
+div {  
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 500px;
+}
+
+
+
+
+  

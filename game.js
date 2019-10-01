@@ -28,12 +28,12 @@ function playRound(playerSelect, compSelect){
 }
 
 
-//Call to start the game
-if (prompt('Do you want to play a game?') === 'yes'){ 
-  for(i = 0; i < 5; i++){
-    playRound(playerSelect(), compSelect());
+function game(){//Call to start the game
+  if (prompt('Do you want to play a game?') === 'yes'){ 
+    for(i = 0; i < 5; i++){
+      playRound(playerSelect(), compSelect());
+    }
+  }else{
+      confirm('Maybe later then.');
   }
-}else{
-    confirm('Maybe later then.');
 }
-
