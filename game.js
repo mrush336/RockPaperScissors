@@ -1,11 +1,21 @@
 //Rock Paper Scissors game
+const player = document.getElementById('player');
+const computer = document.getElementById('computer');
 
-//Player selection function
-function playerSelect(choice){
-  choice = prompt('Enter your choice: rock | paper | scissors');
-  return choice;
+function rock(playerSelect){
+  playerSelect = 'rock';
+  playRound(playerSelect, compSelect());
 }
 
+function paper(playerSelect){
+  playerSelect = 'paper';
+  playRound(playerSelect, compSelect());
+}
+
+function scissors(playerSelect){
+  playerSelect = 'scissors';
+  playRound(playerSelect, compSelect());
+}
 //Computer selection function
 function compSelect(choice){
   let choices = ['rock', 'paper', 'scissors'];
@@ -22,18 +32,23 @@ function playRound(playerSelect, compSelect){
     || playerSelect.toLowerCase() === 'paper' && compSelect === 'rock'
     || playerSelect.toLowerCase() === 'scissors' && compSelect === 'paper'){
     alert(`The computer chose ${compSelect}, You won!!`);
+    playerScore++;
+    player.textContent = `Player score is ${playerScore}.`;
   }else{
     alert(`The computer chose ${compSelect}, You lost.`);
+    computerScore++;
+    computer.textContent = `Computer score is ${computerScore}.`;
   }
 }
 
 
 function game(){//Call to start the game
-  if (prompt('Do you want to play a game?') === 'yes'){ 
-    for(i = 0; i < 5; i++){
-      playRound(playerSelect(), compSelect());
-    }
-  }else{
-      confirm('Maybe later then.');
-  }
-}
+  alert("Select one of the choices below!\n The computer's choice is automatic.");
+  playerScore = 0;
+  computerScore = 0; 
+  player.textContent = `Player score is ${playerScore}.`;
+  computer.textContent = `Computer score is ${computerScore}.`;
+}  
+
+var playerScore = 0;
+var computerScore = 0;
