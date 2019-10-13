@@ -1,4 +1,93 @@
-body {
-    
+html {
+  background-image: url('bgimage2.png');
+  background-size: cover;
+}
 
+div {  
+  justify-content: center;
+  
+}
+
+.container{
+  display: flex;
+  align-self: auto;
+  
+}
+
+#start {
+  background-color: rgb(47, 247, 7); /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  display: inline-block;
+  font-size: 26px;
+  border-radius: 12px;
+  width: 20%;
+  
+}
+
+#top{
+  background-color: rgb(245, 9, 233);
+  color: rgb(250, 246, 6);
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 26px;
+  border-radius: 12px;
+  width: 50%;
+  text-align: center;
+
+}
+
+
+section{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5%;
+  
+}
+#rock{
+  background-color: aqua;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  border-radius: 12px;
+  width: 25%;
+  text-align: center;
+  
+}
+
+#paper{
+  background-color: blueviolet;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  border-radius: 12px;
+  width: 25%;
+  text-align: center;
+}
+
+#scissors{
+  background-color: cornsilk;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  border-radius: 12px;
+  width: 30%;
+  text-align: center;
+}
+
+#score{
+  text-align: center;
+  text-decoration-color: rgb(241, 4, 4);
+  color: rgb(7, 8, 8);
+  background-color: rgba(251, 255, 6, 0.418);
+  font-size: 40px;
+  
 }
