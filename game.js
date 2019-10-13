@@ -46,7 +46,7 @@ function playRound(playerSelect, compSelect){
 }
 
 // Resets the score values and prompts the user with some info.
-function game(){
+function resetScore(){
   alert("Select one of the choices below!\n The computer's choice is automatic.");
   playerScore = 0;
   computerScore = 0;

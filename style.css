@@ -27,6 +27,11 @@ div {
 
 }
 
+#start:hover{
+  background-color: red;
+  color: rgb(47, 247, 7);
+}
+
 #top{
   background-color: rgb(245, 9, 233);
   color: rgb(250, 246, 6);
