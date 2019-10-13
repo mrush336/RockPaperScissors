@@ -3,15 +3,15 @@ html {
   background-size: cover;
 }
 
-div {  
+div {
   justify-content: center;
-  
+
 }
 
 .container{
   display: flex;
   align-self: auto;
-  
+
 }
 
 #start {
@@ -24,7 +24,7 @@ div {
   font-size: 26px;
   border-radius: 12px;
   width: 20%;
-  
+
 }
 
 #top{
@@ -39,48 +39,29 @@ div {
 
 }
 
-
-section{
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5%;
-  
-}
-#rock{
-  background-color: aqua;
-  margin-left: 25px;
-  margin-right: 25px;
+.btn-group button{
+  background-color: blue;
+  border: 1px solid green;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
   margin-top: 25px;
-  margin-bottom: 25px;
-  font-size: 20px;
-  border-radius: 12px;
-  width: 25%;
-  text-align: center;
-  
+  font-size: 32px;
 }
 
-#paper{
-  background-color: blueviolet;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  font-size: 20px;
-  border-radius: 12px;
-  width: 25%;
-  text-align: center;
+.btn-group button:not(:last-child){
+  border-right: none;
 }
 
-#scissors{
-  background-color: cornsilk;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  font-size: 20px;
-  border-radius: 12px;
-  width: 30%;
-  text-align: center;
+.btn-group::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:hover{
+  background-color: cadetblue;
 }
 
 #score{
@@ -89,5 +70,5 @@ section{
   color: rgb(7, 8, 8);
   background-color: rgba(251, 255, 6, 0.418);
   font-size: 40px;
-  
+
 }
