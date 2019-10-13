@@ -1,7 +1,10 @@
 //Rock Paper Scissors game
 const player = document.getElementById('player');
 const computer = document.getElementById('computer');
+var playerScore = 0;
+var computerScore = 0;
 
+// Todo Refactor this code to use switch statements
 function rock(playerSelect){
   playerSelect = 'rock';
   playRound(playerSelect, compSelect());
@@ -16,6 +19,8 @@ function scissors(playerSelect){
   playerSelect = 'scissors';
   playRound(playerSelect, compSelect());
 }
+
+
 //Computer selection function
 function compSelect(choice){
   let choices = ['rock', 'paper', 'scissors'];
@@ -41,14 +46,12 @@ function playRound(playerSelect, compSelect){
   }
 }
 
-
-function game(){//Call to start the game
+// Resets the score values and prompts the user with some info.
+function game(){
   alert("Select one of the choices below!\n The computer's choice is automatic.");
   playerScore = 0;
-  computerScore = 0; 
+  computerScore = 0;
   player.textContent = `Player score is ${playerScore}.`;
   computer.textContent = `Computer score is ${computerScore}.`;
-}  
+}
 
-var playerScore = 0;
-var computerScore = 0;
